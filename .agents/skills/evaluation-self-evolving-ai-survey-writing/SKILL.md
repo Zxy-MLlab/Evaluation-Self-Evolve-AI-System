@@ -1,6 +1,6 @@
 ---
 name: evaluation-self-evolving-ai-survey-writing
-description: Draft or revise the Evaluation in Self-Evolving AI Systems survey using the repository's architecture and literature evidence. Use for abstracts, introductions, related-work synthesis, section outlines, contribution statements, limitations, future directions, conclusions, captions, and responses about this paper. Apply SHIFT to abstracts, BRIDGE to introductions, and keep all claims grounded in README.md, data/research-report.md, data/references.bib, and verified primary sources.
+description: Draft or revise the Evaluation in Self-Evolving AI Systems survey using the repository's architecture and literature evidence. Use for abstracts, introductions, background and scope, review methodology, related-work synthesis, section outlines, contribution statements, limitations, future directions, conclusions, captions, and responses about this paper. Apply SHIFT to abstracts, BRIDGE to introductions, ANCHOR to background and methodology, and keep all claims grounded in README.md, data/research-report.md, data/references.bib, and verified primary sources.
 ---
 
 # Evaluation in Self-Evolving AI Systems Survey Writing
@@ -111,6 +111,37 @@ If subsection headings are appropriate for the venue, prefer argumentative headi
 
 The introduction may instead use unheaded paragraphs when the venue favors a continuous narrative. In either form, ensure that every contribution answers a previously established gap and that the roadmap follows the same order as the research questions.
 
+## Write Background, Scope, and Review Methodology with ANCHOR
+
+Before drafting or revising the Background, Scope, or Review Methodology, read `references/background-writing-patterns.md`.
+
+Treat this section as the paper's **operational contract**: it must make later classifications reproducible by fixing what counts as self-evolution, which neighboring work is included, what an evaluation system contains, how functional roles are assigned, and how studies are found and coded.
+
+Build the section with **ANCHOR**:
+
+1. **A — Anchor the phenomenon.** Define self-evolution through observable criteria: repeated update opportunities, evidence-informed change, persistent modification of reusable system state, and consequences for later behavior. Introduce system snapshots and evolution trajectories.
+2. **N — Name neighboring concepts and boundaries.** Relate self-evolution to inference-time self-refinement, continual learning, online adaptation, AutoML, neuroevolution, open-ended learning, and self-adaptive systems. State conditions for inclusion instead of treating the labels as synonyms.
+3. **C — Construct the conceptual primitives.** Define the evaluation system, evaluation object, evolution object, evidence source, evaluator, signal, protocol, access policy, and induced decision; show how they relate in an update lifecycle.
+4. **H — Harmonize roles with authority.** Define Control, Proof, and Meta-Evaluation briefly and assign roles by information access, timing, downstream use, and decision authority—not by whether the implementation is a test, human, reward model, or LLM judge.
+5. **O — Operationalize the review design and scope.** Name the review type and explain why it fits the heterogeneous field. Define time, language, publication, topical, and evidence boundaries; distinguish direct self-evolving studies from enabling adjacent literature and emerging frontier evidence when those corpora are mixed.
+6. **R — Record retrieval, selection, coding, and synthesis.** Report every database and platform, last search date, full query, limits, deduplication, screening, reviewer process, exclusion reasons, coding fields, reliability procedure, synthesis method, and accessible audit artifact.
+
+For this project, prefer a **structured scoping survey with evidence mapping** unless the completed protocol supports the stronger label “systematic review.” Keep the direct, enabling, and frontier evidence layers distinguishable. Do not present the current `data/research-report.md` as a reproducible completed search: it records a 50-paper journal-focused evidence set but explicitly marks database hit counts and a same-day rerun as still required.
+
+Never invent missing search dates, record counts, duplicate counts, reviewer agreement, or screening decisions. Use conspicuous compile-safe placeholders for unverified fields and list exactly what must be replaced. Do not claim PRISMA or PRISMA-S compliance merely because a flow diagram or search string is present.
+
+Prefer argumentative subsection headings in this order:
+
+1. Operational Definition of Self-Evolving AI Systems
+2. Conceptual Boundaries and Related Paradigms
+3. Evaluation-System Primitives and Lifecycle
+4. Functional Roles and Evidence Independence
+5. Review Design and Scope
+6. Search and Study Selection
+7. Literature Coding and Synthesis
+
+Keep the functional-role discussion compact here. Part I owns the full Control–Proof–Meta taxonomy; Background defines only enough semantics to make later coding unambiguous.
+
 ## Draft Other Survey Sections
 
 For taxonomy or related-work sections, synthesize papers by the project's dimensions instead of writing one-paper-per-paragraph summaries. Explain why each category exists, how categories differ, and what the comparison reveals.
@@ -146,5 +177,6 @@ Before returning a draft, check:
 7. **Terminology:** Are self-evolution, system snapshot, evolution trajectory, evaluator, and evaluation used consistently?
 8. **Contribution:** Does the passage reveal a useful synthesis rather than merely enumerate papers?
 9. **Introduction argument:** For an introduction, does each BRIDGE move appear in order, and does each research question and contribution follow from the stated gap?
+10. **Background contract:** For background or methodology, does each ANCHOR move appear, are neighboring paradigms separated by operational criteria, and are all review-protocol facts auditable rather than aspirational or fabricated?
 
 Revise any failed item before presenting the text.
