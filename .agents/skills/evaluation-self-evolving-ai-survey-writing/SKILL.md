@@ -1,6 +1,6 @@
 ---
 name: evaluation-self-evolving-ai-survey-writing
-description: Draft or revise the Evaluation in Self-Evolving AI Systems survey using the repository's architecture and literature evidence. Use for abstracts, introductions, related-work synthesis, section outlines, contribution statements, limitations, future directions, conclusions, captions, and responses about this paper. Apply the SHIFT argument structure to abstracts and keep all claims grounded in README.md, data/research-report.md, data/references.bib, and verified primary sources.
+description: Draft or revise the Evaluation in Self-Evolving AI Systems survey using the repository's architecture and literature evidence. Use for abstracts, introductions, related-work synthesis, section outlines, contribution statements, limitations, future directions, conclusions, captions, and responses about this paper. Apply SHIFT to abstracts, BRIDGE to introductions, and keep all claims grounded in README.md, data/research-report.md, data/references.bib, and verified primary sources.
 ---
 
 # Evaluation in Self-Evolving AI Systems Survey Writing
@@ -82,9 +82,36 @@ Unless a venue imposes another format, use seven to nine sentences:
 
 Target roughly 180–250 English words unless the venue specifies otherwise. Omit citations from the abstract by default. List only top-level categories; move inventories and examples to the body.
 
-## Draft Other Survey Sections
+## Write Introductions with BRIDGE
 
-For an introduction, establish the field transition, define the unresolved problem, position adjacent surveys precisely, state the review questions, and present contributions without unsupported novelty claims.
+Before drafting or revising an introduction, read `references/introduction-writing-patterns.md`.
+
+Treat the introduction as an argument for why an evaluation-centric survey is needed, not as a background inventory. Build that argument with **BRIDGE**:
+
+1. **B — Begin with the field transition.** Move from fixed post-training systems to systems that make persistent updates across interactions, tasks, or deployments.
+2. **R — Reveal the conceptual consequence.** Explain why this transition makes evaluation part of the causal evolution loop and exposes a conflict between optimization and evidence.
+3. **I — Inspect adjacent reviews.** Group prior surveys by the perspective they organize—self-evolution, agent or model evaluation, continual learning, automated optimization, verification, or evaluator reliability—and state what each perspective contributes.
+4. **D — Define the exact gap and scope.** Identify the missing relationship among these perspectives, delimit what counts as self-evolution, and distinguish the present survey from a general survey of self-improvement algorithms.
+5. **G — Ground the organizing lens and questions.** Introduce Functions, Objects, Methods, Limitations, and Future Directions; present Control, Proof, and Meta-Evaluation as this survey's functional synthesis; then state research questions that the body can answer.
+6. **E — Enumerate deliverables and end with the roadmap.** State concrete intellectual and practical outputs, report the principal field-level synthesis, and make the section order mirror the research questions.
+
+For this paper, the central tension should be stated before the taxonomy:
+
+> Evaluation must both guide system change and support claims that the change constitutes progress, yet an evaluation signal repeatedly exposed to optimization cannot by itself remain independent evidence of progress; the evaluator may also become outdated or strategically exploitable.
+
+Do not claim that adjacent surveys ignored evaluation altogether. The defensible gap is that the relevant literatures remain organized around different units and timescales, and do not jointly distinguish evaluation's control, evidential, and governance authorities across an evolution trajectory.
+
+If subsection headings are appropriate for the venue, prefer argumentative headings in this order:
+
+1. From Adaptation to Self-Evolution
+2. Evaluation as the Infrastructure of Evolution
+3. The Missing Evaluation-Centric Perspective
+4. Scope and Research Questions
+5. Contributions and Organization
+
+The introduction may instead use unheaded paragraphs when the venue favors a continuous narrative. In either form, ensure that every contribution answers a previously established gap and that the roadmap follows the same order as the research questions.
+
+## Draft Other Survey Sections
 
 For taxonomy or related-work sections, synthesize papers by the project's dimensions instead of writing one-paper-per-paragraph summaries. Explain why each category exists, how categories differ, and what the comparison reveals.
 
@@ -118,5 +145,6 @@ Before returning a draft, check:
 6. **Claim strength:** Are established findings, inferences, and the survey's own proposals clearly separated?
 7. **Terminology:** Are self-evolution, system snapshot, evolution trajectory, evaluator, and evaluation used consistently?
 8. **Contribution:** Does the passage reveal a useful synthesis rather than merely enumerate papers?
+9. **Introduction argument:** For an introduction, does each BRIDGE move appear in order, and does each research question and contribution follow from the stated gap?
 
 Revise any failed item before presenting the text.
