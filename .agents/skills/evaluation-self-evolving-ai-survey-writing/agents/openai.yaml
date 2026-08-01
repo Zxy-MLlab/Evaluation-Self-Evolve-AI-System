@@ -1,4 +1,4 @@
 interface:
   display_name: "Evaluation Self-Evolving AI Survey Writing"
-  short_description: "Project-grounded survey writing with SHIFT, BRIDGE, and ANCHOR"
+  short_description: "Project-grounded survey writing with SHIFT, BRIDGE, and FRAME"
   default_prompt: "Use $evaluation-self-evolving-ai-survey-writing to draft or revise this survey section from the repository evidence."
