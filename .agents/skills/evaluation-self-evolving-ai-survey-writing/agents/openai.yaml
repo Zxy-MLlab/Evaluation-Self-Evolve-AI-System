@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluation Self-Evolving AI Survey Writing"
+  short_description: "Project-grounded survey writing with the SHIFT abstract method"
+  default_prompt: "Use $evaluation-self-evolving-ai-survey-writing to draft or revise this survey section from the repository evidence."
