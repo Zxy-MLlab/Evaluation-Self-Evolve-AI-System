@@ -1,5 +1,9 @@
 # Evaluation in Self-Evolving AI Systems：综述设计概览
 
+## 相关文档
+
+- [英文期刊文献深度研究报告](RESEARCH_REPORT.md)：收录检索策略、50 篇核心期刊文献、跨文献比较、研究局限与未来方向。
+
 ## 1. 综述定位
 
 本综述系统讨论 **Evaluation 在 Self-Evolving AI Systems 中承担的功能、评价的对象、实现方法、现有局限和未来发展方向**。
