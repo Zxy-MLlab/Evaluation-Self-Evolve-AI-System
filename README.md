@@ -4,6 +4,7 @@
 
 - [英文期刊文献深度研究报告](data/research-report.md)：收录检索策略、50 篇核心期刊文献、跨文献比较、研究局限与未来方向。
 - [参考文献库](data/references.bib)：收录与综述主题相关的 BibTeX 条目。
+- [Self-Evolving AI 扩展参考文献库](data/self-evolving-ai-references.bib)：补充收录 Self-Evolving AI 相关研究的 BibTeX 条目。
 
 ## 1. 综述定位
 
